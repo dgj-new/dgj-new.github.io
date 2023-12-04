@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.denglu{
+				margin-top: 20px;
+				width: 20%;
+				float: right;
+			}
+			.denglu a{
+				font-size: 25px;
+				font-family: KaiTi;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.fubiao {
+	width: 70%;
+	height: 960px;
+	background: linear-gradient(0deg, rgba(151, 70, 26, 0.5), rgba(251, 216, 197, 0.5), rgba(108, 46, 22, 0.5), rgba(239, 219, 205, 0.5));
+	border: 1px solid;
+	border-image: linear-gradient(0deg, #000000, #FFFFFF) 10 10;
+	opacity: 0.9;
+	position: absolute;
+	left: 16%;
+}
+
+.fubiao p {
+	padding-top: 26px;
+	display: inline-block;
+	padding-left: 35px;
+	height: 20px;
+	font-size: 40px;
+	font-family: KaiTi;
+	font-weight: 200;
+	color: #090000;
+}
+
+.neirong {
+	width: 100%;
+	height: 400px;
+}
+
+.neirong p {
+	padding-top: 26px;
+	display: inline-block;
+	padding-left: 40px;
+	height: 50px;
+	width: 170px;
+	font-size: 24px;
+	font-family: KaiTi;
+	font-weight: 200;
+	color: #090000;
+}
+
+.neirong a {
+	width: 71px;
+	height: 508px;
+	font-size: 25px;
+	font-family: KaiTi;
+	font-weight: 400;
+	color: #898842;
+}
+
+.end {
+	width: 100%;
+	height: 150px;
+}
+
+.end p {
+	width: 100%;
+	height: 15px;
+	display: inline-block;
+	font-size: 36px;
+	font-family: KaiTi;
+	font-weight: 400;
+	color: #639679;
+}
+.wrap {
+            width:900px;
+            height:399px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.3);
+             /* cursor: pointer;  鼠标指针变成 手 的形状 */
+             cursor: pointer;
+        }
+
+        .list {
+            width: 900px;
+            height:399px;
+            position: relative;
+            padding-left: 0px;
+            border: 7px solid rgb(239, 239, 239);
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all .8s;
+        }
+
+        .item:nth-child(1) {
+            background-image: url(img/zip1.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(2) {
+            background-image: url(img/zip2.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(3) {
+            background-image: url(img/zip3.jpg);
+          background-size: cover;
+        }
+
+        .item:nth-child(4) {
+            background-image: url(img/zip4.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(5) {
+            background-image: url(img/zip5.jpg);
+          background-size: cover;
+        }
+
+        .item.active {
+            z-index: 10;
+            opacity: 1;
+        }
+
+        .button {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            z-index: 100;
+            top: 192px;
+            position: absolute;
+        }
+
+        .button-left {
+            display: flex;
+            width: 26px;
+            justify-content: center;
+            line-height: 30px;
+            margin-left: 7px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .button-right {
+            display: flex;
+            width: 26px;
+            justify-content: center;
+            line-height: 30px;
+            margin-right: 7px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .pointList {
+            list-style: none;
+            padding-left: 0px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 200;
+        }
+
+        .point {
+            width: 10px;
+            height: 10px;
+            background-color: antiquewhite;
+            border-radius: 100%;
+            float: left;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: slategray;
+            cursor: pointer;
+        }
+
+        .point.active {
+            background-color: cadetblue;
+        }
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="denglu">
+					<a href="登录页面.html">登录/</a>
+				<a href="注册页面.html">注册</a></div>
+				
+			</div>
+			</div>
+			 <div class="wrap">
+        <ul class="list">
+            <li class="item active">0
+            <li class="item">1
+            <li class="item">2
+            <li class="item">3
+            <li class="item">4
+        </ul>
+        <ul class="pointList">
+            <li class="point active" data-index=0>
+            <li class="point" data-index=1>
+            <li class="point" data-index=2>
+            <li class="point" data-index=3>
+            <li class="point" data-index=4>
+        </ul>
+        
+        <div class="button">
+            <span class="button-left"> < </span>
+            <span class="button-right"> > </span>
+        </div>
+
+    </div>
+		<script>
+    var items = document.querySelectorAll(".item");//图片
+    var points = document.querySelectorAll(".point")//小圆点
+    var left = document.querySelector(".button-left");
+    var right = document.querySelector(".button-right");
+    var all = document.querySelector(".wrap")
+    var index = 0;  // 图片索引 代表当前第几张图片
+    var time = 0;  //定时器跳转参数初始化
+
+
+    //封装一个清除active方法
+    var clearActive = function () {
+        for (i = 0; i < items.length; i++) {
+            items[i].className = 'item';
+        }
+        for (j = 0; j < points.length; j++) {
+            points[j].className = 'point';
+        }
+    }
+
+    //改变active方法
+    var goIndex = function () {
+        clearActive();
+        items[index].className = 'item active';
+        points[index].className = 'point active'
+    }
+    //左按钮事件
+    var goLeft = function () {
+        if (index == 0) {
+            index = 4;
+        } else {
+            index--;
+        }
+        goIndex();
+    }
+
+    //右按钮事件
+    var goRight = function () {
+        if (index < 4) {
+            index++;
+        } else {
+            index = 0;
+        }
+        goIndex();
+    }
+
+
+    //绑定点击事件监听
+    left.addEventListener('click', function () {
+        goLeft();
+        time = 0;//计时器跳转清零
+    })
+  
+    right.addEventListener('click', function () {
+        goRight();
+        time = 0;//计时器跳转清零
+    })
+
+    for (i = 0; i < points.length; i++) {
+        points[i].addEventListener('click', function () {
+            var pointIndex = this.getAttribute('data-index')
+            index = pointIndex;
+            goIndex();
+            time = 0;//计时器跳转清零
+        })
+    }
+    //计时器轮播效果
+    var timer;
+    function play() {
+        timer = setInterval(() => {
+            time++;
+            if (time == 20) {
+                goRight();
+                time = 0;
+            }
+        }, 100)
+    }
+    play();
+    //移入清除计时器
+    all.onmousemove　　 = function () {
+        clearInterval(timer)
+    }
+    //移出启动计时器
+    all.onmouseleave　　 = function () {
+        play();
+    }
+</script>
+
+<div class="fubiao">
+			<p>职位名称</p>
+			<p>所属部门</p>
+			<p>招聘人数</p>
+			<p>发布日期</p>
+			<div class="neirong">
+				<p>数据处理文员</p>
+					<p>人事部</p>
+						<p>3</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>人事员</p>
+					<p>人事部</p>
+						<p>4</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>员工安置员</p>
+					<p>人事部</p>
+						<p>3</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>数据处理文员</p>
+					<p>人事部</p>
+						<p>3</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>会计</p>
+					<p>商务中心部</p>
+						<p>4</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>打包工</p>
+					<p>运营部</p>
+						<p>5</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>装卸工</p>
+					<p>运营部</p>
+						<p>8</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>质检工</p>
+					<p>运营部</p>
+						<p>4</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>技术维修员</p>
+					<p>技术部</p>
+						<p>6</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>组装员</p>
+					<p>技术部</p>
+						<p>3</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>监察员</p>
+					<p>监察部</p>
+						<p>2</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+							<div class="neirong">
+				<p>保安</p>
+					<p>安保部</p>
+						<p>6</p>
+							<p>2023.10.2</p><a href="下一步.html">应聘</a>
+			</div>
+			
+			</div>
+			
+		</div>
+		<div class="end">
+			<p>应聘方式 </p>
+			<p>1、在线申请：点击“应聘”在线填写简历并提交；</p>
+			<p>2、附件上传：点击“上传简历”，提交个人简历；</p> 
+			<p>3、电子邮件：2783901745@qq.com </p>
+			 <p>注：邮件标题及简历附件名称统一为：姓名+应聘职位+应聘时间，例如“张三+数据处理员+20140608”</p>
+		</div>
+	</body>
+</html>

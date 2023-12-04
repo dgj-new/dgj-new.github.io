@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.bannert1{
+				margin-top:90px;
+				width: 100%;
+				height: 600px;
+				background: url(img/大图.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.dade{
+				width: 100%;
+				height: 650px;
+			}
+			.text1{
+				margin-top: 30px;
+				width: 50%;
+				height: 80px;
+				margin-left: 30%;
+			}
+			.text1>p{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.text2{
+				margin-left: 121px;
+				width: 80%;
+				height:570px;
+			}
+			.text2 a{
+				font-size: 35px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.pic{
+				width: 100%;
+				height: 650px;
+				background: url(img/大图2.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bannert1"></div>
+		<!--一个大的盒子装两个小盒子-->
+		<div class="dade">
+			<div class="text1">
+				<p>学驾校需要了解的知识：</p>
+			</div>
+			<div class="text2">
+				<a href="">1.收费方面<br />
+					 收费透明，没有额外的收费。<br />
+					 2.教练方面 <br />
+					 驾校管理管理教练员比较严，教练员性格脾气比较好，有耐心。<br />
+					  3.教学方面<br />
+					教练教学比较负责，技术比较过关，通过率比较高。<br />
+				4.练车方面<br />
+				练车方面人员不多，方便约上。<br />
+				5.服务方面<br />
+				有班车接送，而且驾校有专门的客服负责学员的进度管理，不需要学院操心任何流程手续。<br />
+				6.设施方面<br />
+				硬件设施完备。</a>
+			</div>
+		</div>
+		<div class="pic"></div>
+	</body>
+</html>

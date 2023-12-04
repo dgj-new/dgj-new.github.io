@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.tuwen{
+				width: 100%;
+				height: 400px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 40px;
+			}
+			.gezhong {
+			     margin: 0px;
+				width: 50%;
+				height: 50px;
+				margin-left: 20%;
+			}
+			.gezhong a{
+				font-size: 35px;
+				font-family: KaiTi;
+				font-weight: 200;
+				color: #3399FF;
+				float: right;
+				
+			}
+		.wen1{
+			margin-left: 150px;
+			padding-top: 50px;
+			width: 38%;
+			height: 350px;
+			display: inline-block;
+		
+		}
+		.wen1 a{
+				width: 639px;
+				height: 297px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #3399FF
+				
+		}
+		.wen2{
+			margin-left: 150px;
+			padding-top: 50px;
+			width: 38%;
+			height: 350px;
+			display: inline-block;
+		
+		}
+		.wen2 a{
+				width: 639px;
+				height: 297px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #669966;
+				
+		}
+		.wen3{
+			margin-left: 150px;
+			padding-top: 50px;
+			width: 38%;
+			height: 350px;
+			display: inline-block;
+		
+		}
+		.wen3 a{
+				width: 639px;
+				height: 297px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #CC9933;
+				
+		}
+		.wen4{
+			margin-left: 150px;
+			padding-top: 50px;
+			width: 38%;
+			height: 350px;
+			display: inline-block;
+		
+		}
+		.wen4 a{
+				width: 639px;
+				height: 297px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #993300;
+				
+		}
+		.tu{
+			margin-top: 50px;
+			float: right;
+			width: 50%;
+			height:325px;
+			background: url(img/策划1.jpg);
+			background-size:100% 100% ;
+		}
+		.tu1{
+			margin-top: 50px;
+			float: right;
+			width: 50%;
+			height: 350px;
+			background-color: khaki;
+			background: url(img/团队.jpg)no-repeat;
+			background-size:100% 100% ;
+		}
+		.tu2{
+			margin-top: 50px;
+			float: right;
+			width: 50%;
+			height: 350px;
+			background-color: khaki;
+			background: url(img/图片3.jpg)no-repeat;
+			background-size:100% 100% ;
+		}
+		.tu3{
+			margin-top: 50px;
+			float: right;
+			width: 50%;
+			height: 350px;
+			background-color: khaki;
+			background: url(img/图片4.jpg)no-repeat;
+			background-size:100% 100% ;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个盒子装文字-->
+		
+		<!--一个大的图文盒子装三个盒子-->
+		<div class="text">
+			<div class="gezhong">
+				<a href="">各种各样的策划书,专业人员携手策划</a></div>
+			</div>
+		<div class="tuwen">
+		<div class="wen1">
+				<a href="">文案策划:文案策划是指负责<br />
+					 制定和撰写各类文.字内容的 <br />
+					 工作5夕。主要职责包括根据<br />
+					  目标受众和营销需求，策划 <br />
+					  并撰写各种宣传文案、广告<br />
+					  文案、产品描述、品牌故事等。</a>
+			</div>
+			<!--图片盒子-->
+			<div class="tu"></div>
+		</div>
+		<div class="tuwen">
+		<div class="wen2">
+				<a href="">地产策划:地产策划是指在房地
+					 产行业中负责规划和执行项目开
+					  发的工作。主要职责包括市场调
+					  研、项目定位、规划设计、
+					   销售推广等</a>
+			</div>
+			<!--图片盒子-->
+			<div class="tu1"></div>
+		</div>
+		<div class="tuwen">
+		<div class="wen3">
+				<a href="">广告创意策划:广告创意策划是指
+					 负责广告活动的创意构思和策划的 
+					 工作冒。主要职责包括根据客户需 
+					 求和市场情况，提出创意概念、
+				制定广告策略、设计广告方案。</a>
+			</div>
+			<!--图片盒子-->
+			<div class="tu2"></div>
+		</div>
+		<div class="tuwen">
+		<div class="wen4">
+				<a href="">活动策划:活动策划是指负责
+					策划和组织各种活动的工作场景。主要职责包括活动主题策划、预算控制、场地选择、供应商协调、活动执行等熊。</a>
+			</div>
+			<!--图片盒子-->
+			<div class="tu3"></div>
+		</div>
+	</body>
+</html>

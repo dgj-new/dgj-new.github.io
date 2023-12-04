@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #333333;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 30px;
+				margin-left: 20px;
+			}
+			.gezhong {
+				width: 55%;
+				height: 50px;
+				margin-left: 280px;
+			}
+			.gezhong a{
+				font-size: 55px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #2C15DA;
+				
+			}
+			.banner{
+				width: 100%;
+				height: 1700px;
+				background:url(img/二.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.text1{
+				padding-top:80px;
+				width: 85%;
+				height: 400px;
+				margin-left: 10%;
+			}
+			.text1 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #B97676;
+			}
+			.text2{
+				margin-top: 80px;
+				width: 85%;
+				height: 400px;
+				margin-left: 10%;
+			}
+			.text2 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #B97676;
+			}
+			.biaoti{
+				padding-top: 70px;
+				margin-left: 500px;
+				width: 50%;
+				height: 70px;
+			}
+			.biaoti>p{
+			font-size: 80px;
+			font-family: KaiTi;
+			font-weight: 400;
+			color: #958B21;
+			}
+			.ti{
+				margin-top: 170px;
+				margin-left: 40px;
+				width: 20%;
+				height: 50px;
+			}
+			.ti>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #958B21;
+				
+			}
+			.ti2{
+				margin-top: 80px;
+				margin-left: 40px;
+				width: 20%;
+				height: 70px;
+			}
+			.ti2>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #958B21;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="banner">
+				<div class="biaoti">
+				<p>人事部主管</p></div>
+				<div class="ti"><p>主要职责：</p></div>
+				<div class="text1">
+					<a href="">1.负责招募；<br />
+							2.规划员工培训；<br />
+							3.进行员工考核并提出建议；<br />
+							4.整理相关档案；<br />
+							5.遵循劳动法规；<br />
+							6.落实员工资金发放；<br />
+							7.检查员工出勤并督促员工遵守纪律；<br />
+							8.收集下发文件并提供人事咨询。</a>
+				</div>
+				<div class="ti2"><p>岗位要求:</p></div>
+				<div class="text2">
+					<a href="">具有良好的书面、口头表达能力,具有亲和力和服务意识,沟通领悟能力强;
+						熟练使用常用办公软件;<br />
+						
+						了解国家各项劳动人事法规政策及税法要求者优先考虑;<br />
+						
+						吃苦耐劳,工作细致认真,原则性强,有良好的执行力及职业素养;<br />
+						
+						有强烈的责任感和敬业精神,公平公正、做事严谨,能承受较大的工作压力。
+						</a>
+				</div>
+			</div>
+	</body>
+</html>

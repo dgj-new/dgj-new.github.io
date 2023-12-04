@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>求职简历</title>
+		<style>
+			body {
+				background-color: #c7f0e7;
+			}
+			
+			.logo {
+				top: 10px;
+				left: 10px;
+			}
+			
+			.zhao {}
+			
+			.links {
+				float: right;
+				margin-top: 10px;
+				margin-left: 10px;
+				color: #666666;
+			}
+			
+			.links a {
+				text-decoration: none;
+				font-size: 25px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #030D11;
+			}
+			.links a:hover{
+				color: brown;
+				font-size: 30px;
+			}
+			
+			
+			.box {
+				width: 25%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 5px;
+				background-color: #a8e6cf;
+				padding: 20px;
+			}
+			.box p{
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 200;
+				color: #080B01;
+			}
+			.box a{
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #030D11;
+			}
+			
+			.footer {
+				bottom: 0;
+				width: 90%;
+				background-color: blanchedalmond;
+				text-align: left;
+				padding: 5px;
+				margin-left: 60px;
+				position: absolute;
+				top: 20o0px;
+			}
+			
+			.xiayibu {
+				background-color: steelblue;
+			}
+			
+			.xiayibu a {
+				text-decoration: none;
+				color: floralwhite;
+			}
+			.footer a{
+				color: green;
+				font-family: kaiti;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo">
+			<div class="links">
+				<a href="首页.html" >首页</a> |
+				<a href="职位信息首页.html" >职位信息</a>
+			</div>
+			<img src="img/logo1.jpg" alt="Logo" width="90px">
+		</div>
+		<div class="box">
+			<a><p>填写你的求职简历</p>
+			<table align="center">
+				<tr>
+					<td>姓名:</td>
+					<td><input id="name" type="text" autofocus required></td>
+				</tr>
+				<tr>
+					<td>电话号码:</td>
+					<td><input id="telnumber" type="telnumber" required><br /></td>
+				</tr>
+				<tr>
+					<td>电子邮箱:</td>
+					<td><input type="text" id="email" name="email" required><br /></td>
+				</tr>
+				<tr>
+					<td>就读/毕业于(学校):</td>
+					<td><input type="text" id="school" name="school" required></td>
+				</td>
+			</tr>
+				<tr>
+					<td>所学专业:</td>
+					<td><input type="text" id="major" name="major" required></td>
+				</tr>
+				<tr>
+					<td>学历:</td>
+					<td><input type="text" id="degress" name="degress" required></td>
+				</tr>
+			</table>
+			<form>
+					<a>工作经验：</a>
+					<input type="radio" id="hasExp" name="experience" value="有">
+					<label for="hasExp"><a>有</a></label>
+					<input type="radio" id="noExp" name="experience" value="无">
+					
+					<label for="noExp"><a>无</a></label><br></form>
+			<form>
+					<a>是否毕业：</a>
+					<input type="radio" id="hasExp" name="experience" value="是">
+					<label for="hasExp"><a>是</a></label>
+					<input type="radio" id="noExp" name="experience" value="否">
+					<label for="noExp"><a>否</a></label><br><br />
+				</form></a>
+				<div class="xiayibu">
+					<a href="投递.html">
+						<p style="font-size: 30px;">下一步</p>
+					</a>
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<a>应聘方式：<br>1丶 在线申请:点击"应聘"在线填写简历并提交;<br>2丶 附件上传:点击"上传简历",并提交个人简历;<br>3丶电子邮件:2783901745@qq.com<br>
+			<p>注: 邮件标题及简历附件名称统一为:姓名+应聘职位+应聘时间,例如"张三+渠数据处理员+20140608"</p></a>
+		</div>
+	</body>
+
+</html>

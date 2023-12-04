@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				height: 200px;
+			}
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			.search{
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			.search form{
+				width: 20%;
+				display: flex;
+			}
+			.search input{
+				line-height: 25px;
+				background-color: #999999;
+			}
+			.search button{
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			.header>img{
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			.huise>ul{
+				margin-left: 340px;
+			}
+			.zp{
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			.zp a{
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 20px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.dade{
+				width: 98%;
+				height: 1700px;
+				margin-left: 25px;
+			}
+			.zuo{
+				width: 64%;
+				height: 1600px;
+				display: inline-block;
+				border-bottom: 1px solid #708090;
+				border-left:  1px solid #708090;
+				border-right:  1px solid#708090;
+			}
+			.you{
+				float: right;
+				width: 34%;
+				height: 700px;
+			}
+			.shangtu{
+				width: 100%;
+				height: 350px;
+				background:url(img/活力.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.xiatu{
+				margin-top: 20px;
+				width: 100%;
+				height: 350px;
+				background:url(img/了解工资组成.png)no-repeat;
+				background-size:100% 100% ;
+			}
+			.banner{
+				width: 100%;
+				height: 300px;
+				background:url(img/三角.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.laiyuan{
+				width: 45%;
+				height: 40px;
+				margin-left: 260px;
+			}
+			.laiyuan a{
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #433315;
+			}
+			.biaoti{
+				padding-top: 90px;
+				margin-left: 160px;
+				width: 70%;
+				height: 80px;
+			}
+			.biaoti a{
+				font-size: 38px;
+				font-family: STLiti;
+				font-weight: 400;
+				color: #835C13;
+			}
+			.kaitou {
+				margin-top: 30px;
+				width: 100%;
+			}
+			.kaitou a{
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+			}
+			.kaitou>p{
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+				text-indent: 35px;
+			}
+			.wen1 {
+				width: 100%;
+			}
+			.wen1 a{
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+			}
+			/*.wen2 a{
+				font-size: 30px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+			}*/
+			.wen1 p{
+				font-size: 28px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #433315;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个大的盒子装两个小的盒子-->
+		<div class="dade">
+			<div class="zuo">
+				<div class="banner">
+					<div class="biaoti">
+					<a href="">一份优质简历应该包含哪些部分？</a></div>
+					<div class="laiyuan">
+						<a href="">2022年12月07日来源：上海人社</a>
+					</div>
+				</div>
+				<div class="text">
+					<div class="kaitou">
+						<p>简历是求职的“敲门砖”，直接影响着求职成败。然而，不少求职者对简历不太重视，认为
+简历就是写自己的经历，“记流水账，没什么花头”。因此，在招聘现场，常会看到这样的简历：
+有的是从某招聘网站直接下载而来，网站的水印还留在上面；有的太“简”了，只写了时间、工
+作单位、岗位；有的则太长，基础岗位就描述了三页纸；还有的简历上用的照片是大头照，甚至有
+错别字……这些问题都直接影响后续的面试邀约几率，因为用人单位人事可以从一份简历中，看出
+求职者最基本的职业态度。试想哪家单位愿意录用一个连简历都马虎应付的人呢？</p>
+					</div>
+					
+					<div class="wen1">
+						<a href="">
+							<p>那么，如何才能制作一份优质简历？<br />
+						01 基本信息</p>其中包含姓名、性别、出生年月、户籍、居住地、工作年限、政治面貌、联系方式等。注意核对
+电话号码和邮箱地址是否正确，把联系方式放在第一部分的醒目位置，可方便人事联系。简历中
+没有必要写证件号码，写明出生年月就可以让别人知道你的年龄。居住地可以写到某区某街道，
+不需要罗列详细地址，但要让人事了解求职者居住区域离公司有多远、通勤时间大概需要多久、
+交通是否方便等。</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>02 工作经历或项目经验、实践实习经历</p>这个部分是简历的“重头戏”，要做到三点：</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>1.逻辑清晰。</p>从最近的经历开始写，写明工作或实习公司名称、岗位、时间。如果不是很知名的
+公司，建议用一两句话介绍该企业，让人事了解之前的实习是在什么行业、公司主营业务是什么等。
+</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>2.言之有物。</p>逐条逐项写清自己的工作内容。用“负责、参与、开展”等动词开头，体现自己具
+体做了什么，描述内容要真实可信，忌夸张离谱。</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>3.量化最佳。</p>自己在这个岗位上锻炼了什么能力、取得了怎样的成绩。比如，具备沟通能力、领
+导力、数据分析能力等。尽量用量化的信息、数据来支撑，不能太口语化。
+在一份简历中，面试官最想了解的核心内容就是求职者做过什么、能做什么及做到什么程度。此
+外，简历不是一味堆砌自己所有的经历，而是要针对不同的岗位，有针对性地按照招聘内容，拆
+解岗位招聘要求，逐一对照，梳理自己的工作经历、实践部分，做到有的放矢。
+</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>04 教育经历</p>写明最高学历的毕业学校名称、专业、入学及毕业时间。应届毕业生如果成绩不错的话，可写上
+绩点和专业排名，不宜多写与工作无关的课程或培训内容。
+</a></div>
+				<div class="wen1">
+						<a href="">
+							<p>05 个人技能及其他</p>这个部分主要罗列前三部分体现不出与没有提及的技能、亮点、证书等，建议不要罗列一大段空洞的自我介绍。
+当然，简历投递时还需要注意一些细节。如，电子版简历用PDF格式导出后再投递；电子版的简历标题应为“应聘岗位+姓名+联系方式”；投出时间最好是周二上午至周四下午，以便于人事及时
+查看；邮件开头准备一段简短活泼又能表现个人优势的话语，与简历一同投递。最后，要准备好
+其他证书等扫描件以备用。
+</a></div>
+				</div>
+			</div>
+			<!--右边的盒子再装两个图片盒子-->
+			<div class="you">
+				<div class="shangtu"></div>
+				<div class="xiatu"></div>
+			</div>
+		</div>
+
+	</body>
+</html>
+

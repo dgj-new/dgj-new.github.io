@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #333333;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 30px;
+				margin-left: 20px;
+			}
+			.gezhong {
+				width: 55%;
+				height: 50px;
+				margin-left: 280px;
+			}
+			.gezhong a{
+				font-size: 60px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #2C15DA;
+				
+			}
+			.banner{
+				width: 100%;
+				height: 1700px;
+				background:url(img/4.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.text1{
+				padding-top:80px;
+				width: 85%;
+				height: 400px;
+				margin-left: 10%;
+			}
+			.text1 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #256982;
+			}
+			.text2{
+				margin-top: 80px;
+				width: 85%;
+				height: 400px;
+				margin-left: 10%;
+			}
+			.text2 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #256982;
+			}
+			.biaoti{
+				padding-top: 70px;
+				margin-left: 500px;
+				width: 50%;
+				height: 70px;
+			}
+			.biaoti>p{
+			font-size: 80px;
+			font-family: KaiTi;
+			font-weight: 400;
+			color: #085D79;
+			}
+			.ti{
+				margin-top: 170px;
+				margin-left: 40px;
+				width: 20%;
+				height: 50px;
+			}
+			.ti>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #085D79;
+				
+			}
+			.ti2{
+				margin-top: 80px;
+				margin-left: 40px;
+				width: 20%;
+				height: 70px;
+			}
+			.ti2>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #085D79;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="banner">
+				<div class="biaoti">
+				<p>员工安置员</p></div>
+				<div class="ti"><p>专业介绍：</p></div>
+				<div class="text1">
+					<a href="">1.了解员工现有社保上个人身份属于干部还是工人，此举在一定程度上可以为企业
+  或员工后续需要变更身份预留时间准备。<br />
+2.征询员工对自身岗位性质的判断，了解是否与企业判断一致。<br />
+3.征询员工对于50周岁或55周岁的意愿，此举可协助我们帮助员工在退休前进行提
+  早规划。<br />
+4.梳理企业在对员工的用工过程中是否存在社保漏缴情形；<br />
+5.了解员工的累计社保缴费年限是否满足办理退休要求。
+
+							</a>
+
+				</div>
+				<div class="ti2"><p>岗位要求:</p></div>
+				<div class="text2">
+					<a href="">严格遵守法律法规，综合考虑员工意愿，尽量减少发生争议，维护企业和员工<br />
+的合法正当权益，并确保企业生产运营及公众形象不受负面影响。
+</a>
+				</div>
+	</body>
+</html>

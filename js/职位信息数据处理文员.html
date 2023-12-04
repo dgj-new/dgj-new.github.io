@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #333333;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 30px;
+				margin-left: 20px;
+			}
+			.gezhong {
+				width: 55%;
+				height: 50px;
+				margin-left: 280px;
+			}
+			.gezhong a{
+				font-size: 60px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #2C15DA;
+				
+			}
+			.banner{
+				width: 100%;
+				height: 1700px;
+				background:url(img/背景1.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.text1{
+				padding-top:100px;
+				width: 85%;
+				height: 400px;
+				margin-left: 5%;
+			}
+			.text1 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 500;
+				color: #000000;
+			}
+			.text2{
+				margin-top: 110px;
+				width: 80%;
+				height: 400px;
+				margin-left: 10%;
+			}
+			.text2 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 500;
+				color: #000000;
+			}
+			.biaoti{
+				padding-top: 70px;
+				margin-left: 350px;
+				width: 50%;
+				height: 70px;
+			}
+			.biaoti>p{
+				font-size: 90px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #FAF5F5;
+			}
+			.ti{
+				margin-top: 170px;
+				margin-left: 40px;
+				width: 20%;
+				height: 70px;
+			}
+			.ti>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #000000;
+			}
+			.ti2{
+				margin-top: 80px;
+				margin-left: 40px;
+				width: 20%;
+				height: 70px;
+			}
+			.ti2>p{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 700;
+				color: #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="banner">
+				<div class="biaoti">
+				<p>数据处理文员</p></div>
+				<div class="ti"><p>专业介绍:</p></div>
+				<div class="text1">
+					<a href="">1.对公司项目的原始数据库进行清理，并根据反馈意见进行修改；<br />
+					2.负责各类的数据分类与整理；<br />
+					3.文字输入，文件扫描，数据录入和核对；<br />
+					4.参与数据处理系统测试;<br />
+					5.协助部门经理，对数据处理员的工作进行指导；<br />
+					6.完成领导交办的其他工作内容。</a>
+				</div>
+				<div class="ti2"><p>岗位要求:</p></div>
+				<div class="text2">
+					<a href="">1.大专及以上学历，一年以上数据处理工作经验，<br />
+					2.熟练使用Excel等数据处理工具，具备良好的数据统计、分析及处理能力；<br />
+					3.具备严密的逻辑思维能力，对项目充分理解，数据敏感，善于从数据分析中<br />
+					发现问题；<br />
+					4.良好的沟通，表达和协调能力；<br />
+					5.做事细心、严谨、勤奋、踏实，具备强烈的责任心和团队意识；<br />
+					6.积极良好的心态，能承受工作压力，乐于与团队成员分享知识与经验。</a>
+				</div>
+			</div>
+	</body>
+</html>

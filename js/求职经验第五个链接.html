@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				height: 200px;
+			}
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			.search{
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			.search form{
+				width: 20%;
+				display: flex;
+			}
+			.search input{
+				line-height: 25px;
+				background-color: #999999;
+			}
+			.search button{
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			.header>img{
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			.huise>ul{
+				margin-left: 340px;
+			}
+			.zp{
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			.zp a{
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 20px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.dade{
+				width: 98%;
+				height: 1700px;
+				margin-left: 25px;
+			}
+			.zuo{
+				width: 64%;
+				height: 1500px;
+				display: inline-block;
+				border-bottom: 1px solid #708090;
+				border-left:  1px solid #708090;
+				border-right:  1px solid#708090;
+			}
+			.you{
+				float: right;
+				width: 34%;
+				height: 700px;
+			}
+			.shangtu{
+				width: 100%;
+				height: 350px;
+				background:url(img/活力.jpg)no-repeat;
+				background-size:100% 100% ;
+			}
+			.xiatu{
+				margin-top: 20px;
+				width: 100%;
+				height: 350px;
+				background:url(img/了解工资组成.png)no-repeat;
+				background-size:100% 100% ;
+			}
+			.banner{
+				width: 100%;
+				height: 300px;
+				background:url(img/五个链接.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.biaoti{
+				padding-top: 90px;
+				margin-left: 160px;
+				width: 70%;
+				height: 80px;
+			}
+			.biaoti a{
+				font-size: 38px;
+				font-family: STLiti;
+				font-weight: 400;
+				color: white;
+			}
+			.wen1 {
+				width: 100%;
+				margin-top: 30px;
+			}
+			.wen1 p{
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+
+			}
+			.riqi{
+				width:45% ;
+				height: 30px;
+				margin-left: 300px;
+			}
+			.riqi a{
+				font-size: 20px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #FDFDFC;
+			}
+			p{
+				text-indent: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个大的盒子装两个小的盒子-->
+		<div class="dade">
+			<div class="zuo">
+				<div class="banner">
+					<div class="biaoti">
+					<a href="">简历优化：锦上添花还是掺水"埋雷"</a></div>
+					<div class="riqi">
+					<a href="">2022年12月07日来源：上海人社</a></div>
+				</div>
+				<div class="text">
+					<div class="wen1">
+							   <p> 时值毕业季，招聘市场热度不减。对求职者而言，简历可谓是找工作过程中的“敲门砖”。
+2021届高校毕业生规模达909万人，求职竞争激烈。前不久，“重庆女孩帮改简历助3万人求职成
+功”的话题冲上热搜，让简历优化成为热词。但媒体发现，有的简历优化服务“掺水造假”，存
+在伪造学历和证书、伪造实习经历，或对个人经历进行不切实际地夸大等情况。同时，存在简历
+被倒卖、个人信息泄露的风险。人社部门也提醒求职者，简历优化或“埋雷”，稍不注意就有可
+能出现简历造假的情况，切莫为了一份“亮眼”的简历踏入“失信陷阱”。</p>
+ <p>  个人花钱请专业人士把自己的简历变得“好看”一些，从初衷上讲其实是无可厚非的。比如，
+一些求职者并不缺经历和能力，但很可能因为不善于表达和展现，自己做出的简历并不匹配自己
+的能力，从而降低求职的效率。这种情况下，购买优化简历服务，让简历能更精准地反映自己的
+真实情况，把闪光点秀出来，实在不该被讥讽为“交智商税”，社会对此完全可以平常心来看待。</p>
+   <p> 不过，简历优化是有合理边界的。对个人来讲，如果完全把求职的希望放在美化简历上，甚
+至不惜在简历中“无中生有”“掺水造假”，伪造学历和证书，如此做法显然就严重跑偏了。一
+方面，“骗得了一时，骗不了一世”，即便靠造假的简历暂时找到工作，如果没有能力作为基础，
+职业前途也很可能走不远。换句话说，对简历的适当优化，理应有真实能力打底。舆论之所以对
+简历优化抱以警惕，一个很大原因就是担心这一现象会进一步强化一些年轻人的功利化求职思维
+，忽视自己能力的提升，而只想着走“捷径”，结果很可能得不偿失，同时也不利于构建公平的
+求职环境。</p>
+      <p>   另一方面，对简历“涂脂抹粉”到造假的地步，不仅有失诚信，甚至可能违法。如此前媒体
+报道，一些简历优化服务帮助求职者伪造国家机关印章和公司、企业、事业单位印章等，其实已
+经涉嫌犯罪。求职者如果贸然购买这样的简历优化服务，到头来不仅无法成功求职，还很可能给
+自己留下抹不去的诚信污点。一句话，适当的简历优化未尝不可，但切勿过度。</p>
+    <p>    从媒体调查来看，当前的简历优化服务虽然刚刚兴起，但其中的乱象已经不少。除了一些机
+构以造假的方式来美化简历很可能给求职者“埋雷”，其所放大的个人信息泄露风险也不可不察。
+事实上，近年来由于第三方求职平台的兴起，个人简历信息被批量泄露和贩卖的现象层出不穷。</p>
+     <p> 此外，作为一个全新行业，简历优化服务的从业者资质、服务标准都还是一片空白，服务质
+量和消费者权益保障也自然处于一个监管真空状态。有媒体此前报道，一些标榜的简历优化大师
+，实际很可能只是在校大学生。面对这样缺乏基本规范的市场，个人“消费”理当慎之又慎。</p>
+       <p>    目前，许多就业指导和服务，还没有细化到帮助求职者提升简历制作水平和面试技巧等个人
+化服务。但现实中，求职简历是否合格，是否掌握一定的面试技巧，确实会影响到一部分人的求
+职成功率。既然一些求职者尤其是高校毕业生有相关需求，不妨将之纳入相应的就业指导服务中
+去。如此既能够降低求职成本，也有利于避免求职者陷入一些权益风险中去。</p>
+					</div>
+				</div>
+			</div>
+			<!--右边的盒子再装两个图片盒子-->
+			<div class="you">
+				<div class="shangtu"></div>
+				<div class="xiatu"></div>
+			</div>
+		</div>
+
+	</body>
+</html>
+

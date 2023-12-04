@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				height: 200px;
+			}
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			.search{
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			.search form{
+				width: 20%;
+				display: flex;
+			}
+			.search input{
+				line-height: 25px;
+				background-color: #999999;
+			}
+			.search button{
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			.header>img{
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			.huise>ul{
+				margin-left: 340px;
+			}
+			.zp{
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			.zp a{
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 130px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			
+			.dengpao {
+				width: 100%;
+				height: 1500px;
+				background: url(img/dengpao.jpeg) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.xinxi {
+				width: 100%;
+				height: 16%;
+				
+				position: absolute;
+				top: 70%;
+			}
+			
+			#ziti {
+				width: 885px;
+				height: 196px;
+				display: flex;
+				position: absolute;
+				left: 35%;
+			}
+			
+			#ziti a {
+				font-size: 100px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #F1F3F7;
+			}
+			
+			.xq {
+				width: 100%;
+				height: 920px;
+				position: absolute;
+				top: 96%;
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			.mc {
+				width: 35%;
+				height: 920px;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.mc a {
+				font-size: 60px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #FAF7F7;
+			}
+			
+			.bm {
+				width: 35%;
+				height: 920px;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.bm a {
+				font-size: 60px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #FAF7F7;
+			}
+			
+			.xiaoqing {
+				width: 35%;
+				height:920px;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.xiaoqing a {
+				font-size: 60px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #A1A678;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="dengpao">
+			<div class="xinxi">
+				<div id="ziti">
+					<a>职位信息</a>
+				</div>
+			</div>
+			<div class="xq">
+				<div class="mc">
+					<a>数据处理文员 <br/>人事部主管<br/> 人事员 <br/>员工安置员<br/> 会计<br/> 打包工<br/> 装卸工<br/> 质检工<br/> 技术维修员<br/> 组装员 <br/>监察员 <br/>  保安</a>
+				</div>
+				<div class="bm">
+					<a>人事部<br/> 人事部 <br/>人事部 <br/>人事部<br/> 商务中心部<br/> 运营部 <br/>运营部<br/> 运营部<br/> 技术部 <br/>技术部<br/> 监察部 <br/>安保部</a>
+				</div>
+				<div class="xiaoqing">
+					<p><a href="职位信息数据处理文员.html">详情</a> <br />
+					<a href="职位信息人事部主管.html">详情</a> <br />
+					<a href="职位信息人事员.html">详情</a>  <br />
+					<a href="职位信息员工安置员.html">详情</a>  <br />
+					<a href="职位信息会计.html">详情</a>  <br />
+				    <a href="职位信息打包工.html">详情</a>  <br />
+					<a href="职位信息装卸工.html">详情</a>  <br />
+					<a href="职位信息质检员.html">详情</a>  <br />
+					<a href="职位信息技术维修.html">详情</a>  <br />
+					<a href="职位信息组装员.html">详情</a>  <br />
+					<a href="职位信息监察员.html">详情</a>  <br />
+					<a href="职位信息保安.html">详情</a> </p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+	</head>
+	<body>
+	</body>
+</html>

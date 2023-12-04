@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 200px;
+			}
+			
+			.huise {
+				width: 100%;
+				height: 125px;
+				background-color: #999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p {
+				padding-top: 26px;
+			}
+			
+			.huise>ul>li {
+				height: 20px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+			}
+			
+			.huise>ul>li a {
+				width: 139px;
+				height: 31px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				line-height: 120px;
+			}
+			
+			.huise>ul>li a:hover {
+				color: lemonchiffon;
+				font-size: 25px;
+			}
+			
+			.dade {
+				width: 98%;
+				height: 2100px;
+				margin-left: 25px;
+			}
+			
+			.zuo {
+				width: 64%;
+				height: 2100px;
+				display: inline-block;
+				border-bottom: 1px solid #708090;
+				border-left: 1px solid #708090;
+				border-right: 1px solid#708090;
+			}
+			
+			.you {
+				float: right;
+				width: 34%;
+				height: 700px;
+			}
+			
+			.shangtu {
+				width: 100%;
+				height: 350px;
+				background: url(img/活力.jpg)no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.xiatu {
+				margin-top: 20px;
+				width: 100%;
+				height: 350px;
+				background: url(img/了解工资组成.png)no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.banner {
+				width: 100%;
+				height: 300px;
+				background: url(img/四个链接.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.biaoti {
+				padding-top: 90px;
+				margin-left: 200px;
+				width: 70%;
+				height: 80px;
+			}
+			
+			.biaoti a {
+				font-size: 38px;
+				font-family: STLiti;
+				font-weight: 400;
+				color: #835C13;
+			}
+			
+			.kaitou {
+				margin-top: 30px;
+				width: 100%;
+			}
+			
+			.kaitou p {
+				font-size: 28px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #433315;
+			}
+			
+			.kaitou a {
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+			}
+			
+			.wen1 {
+				width: 100%;
+			}
+			
+			.wen1 a {
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #8E8E8E;
+			}
+			
+			.wen1 p {
+				font-size: 28px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #433315;
+			}
+			
+			.xiaozi {
+				padding-top: 30px;
+				margin-left: 250px;
+				width: 45%;
+				height: 60px;
+			}
+			
+			.xiaozi a {
+				font-size: 20px;
+				font-family: FangSong;
+				font-weight: 400;
+				color: #433315;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个大的盒子装两个小的盒子-->
+		<div class="dade">
+			<div class="zuo">
+				<div class="banner">
+					<div class="biaoti">
+						<a href="">简历撰写有哪些注意事项？</a>
+					</div>
+					<div class="xiaozi">
+						<a>2022年09月16日来源：大学生就业资讯</a>
+					</div>
+				</div>
+
+				<div class="text">
+					<div class="kaitou">
+						<a href="">
+							<p>简历在布局上有什么讲究吗？</p>
+							简历的模块化很重要，模块之间边界清晰有助于HR的阅读。模块化的前提是内容逻辑的清晰。各模块形状一致，整体边界对齐。简历当中的字体一般使用宋体或微软雅黑，大小可以适当变化，有利于HR抓取线索，行距为1.5倍。</a>
+					</div>
+
+					<div class="wen1">
+						<a href="">
+							<p>简历撰写还有哪些需注意的细节？</p>很多求职人员在简历的设计上花费很多心思，但 是还可能因为细节问题，导致功亏一篑，例如：是否有错别字，不要成为减分项；照片选择要 恰当，不要成为否决项；联系方式一定要正确，确保不停机、不关机；接听及时且有礼貌。
+						</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>怎样使实践经历成为简历上的亮点？</p>实践经历包括实习经历、实践经历等，可以体现自身技能、素质、性格等要素。核心要点是：不要写空泛的职责，而是尽可能体现具体的工作任务。在描述工作任务的时候尽量使用(形容词)+动词+名词 如：（迅速）组织团队成员、（主动）提出个人建议。描述结果的目的是为了突出程度或者水平，在描述的时候要注意数量化或者具体化。如：完成5000份问卷调查、减少了客户咨询电话的等待时间。体现效率、提升效益、节省成本。</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>怎样在简历中体现自己与意向岗位相匹配的部分？</p>
+
+							在较为了解企业情况和岗位需求的基础上，明晰企业的择人标准和考量维度，建议通过以下几个方面来“对号入座”：<br /> （1）自己的性格：行为风格和特征。企业关注的是：性格与目标岗位是否合适。
+
+							<br /> （2）职业价值观：期望从工作中得到什么。企业关注的是：价值观与企业文化是否匹配。
+
+							<br /> （3）心理素质：能够产生工作结果的心理素质。企业关注的是：责任心、主动性、同理心、抗压性。
+
+							<br /> （4）专业技能：跟岗位的核心工作高度相关的技能，比如英语秘书，专业技能就是英语口译。
+
+							<br /> （5）通用技能：跟职场密切相关的技能，比如英语秘书，通用技能就是PPT制作。很多专业性门槛较低的岗位，会重点考察这个类型的技能。
+						</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>准备一份简历是否能多岗多用？</p>
+
+							简历当中体现的重点信息应与你所投递的岗位相匹配，不同的企业、岗位关注的重点会有所区别，所以针对不同的岗位应对简历所体现的重点有所调整。让HR能快速地“搜寻”到自己想要的重点。</a>
+					</div>
+					<div class="wen1">
+						<a href="">
+							<p>简历制作需要避免哪些高级问题？</p>
+
+							1. 重点标记过多<br /> 有些学生喜欢将每段经历中自己认为比较重要的地方或体现自己能力的部分进行加粗或斜体等重点特殊标记。但是，如果标记过多会出现喧宾夺主的情况，破坏简历整体的美观度，也未必达到突出重点的效果，适得其反。
+
+							<br /> 2. 语言表达不当<br /> 不能很好地陈述在校内外的经历、口语化表达等是简历中表现比较集中的问题。实习实践经历是简历的核心内容，是简历筛选过程中重点考量的部分。如何运用简洁生动的文字来描述工作表现，需要学生经过不断的修改调整并结合面试材料进行理顺、整合。简历修改不是一个快速的过程，要经过一段时间才能摸索到适合自己的方法，期间通过文字的调整、思路的转变，并有效和未来的面试进行结合，可以更好地展现个人的综合水平。一般来讲要将经历转化为动宾结构的累加，并运用丰富的词语和相对固定的体例结构，使得简历查看起来美观大方，过程中亦要避免大量的重复用词。
+
+							<br /> 3. 内容展示不能突出特色<br /> 很多学生在个人经历描述的过程中，更多展示内容为岗位职责而非自己的工作表现。举例说来，很多学生都有过类似的实习经历，如果每个人展示的内容都是对于实习岗位所要做工作的简述，那就意味着拥有相同实习经历的学生会有一样的简历内容，自然就不能凸显求职者之间的区别。在修改简历时，学生要注意，如果这段经历别的实习生也在做，就不能简单地写在简历中，不然不能体现出求职者所需要展示的长处。运用数字表述等小窍门将自己的实际工作内容和别人的实习表现区分开，不失为一个巧妙的方法。
+
+							<br /> 4. 原因分析及解决对策<br /> 在日常对简历进行诊断的过程中，发现很多学生不会写简历的原因主要是对标准格式了解不够清晰，对自己的职业认知理解不够深入，对用人单位的需求掌握不够到位。另外，部分学生对个人简历和面试之间的关系没有弄清楚。个人简历是为面试提供素材的来源。简历的内容应该和自己联系密切。面试中涉及的问题和答案应该出现在简历的框架内容里。
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--右边的盒子再装两个图片盒子-->
+			<div class="you">
+				<div class="shangtu"></div>
+				<div class="xiatu"></div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

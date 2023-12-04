@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				height: 200px;
+			}
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			.search{
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			.search form{
+				width: 20%;
+				display: flex;
+			}
+			.search input{
+				line-height: 25px;
+				background-color: #999999;
+			}
+			.search button{
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			.header>img{
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			.huise>ul{
+				margin-left: 340px;
+			}
+			.zp{
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			.zp a{
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 130px;
+				padding: 0px 43px 120px;
+				float: left;
+				list-style: none;
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			/*banner图*/
+			.zhaopinpic{
+				width: 100%;
+				height: 500px;
+				background: url(img/2banner2.jpg) no-repeat;
+				background-size:100% 500px ;
+			}
+			/*文字部分*/
+			.text{
+				width:100%;
+				height: 220px;
+				
+			}
+			.zhishang{
+				width: 35%;
+				background-color:white;
+				margin-left: 450px;
+				padding-top: 70px;
+			}
+			.zhishang a{
+				width: 643px;
+				height: 68px;
+				font-size: 40px;
+				font-family: Adobe Heiti Std;
+				font-weight: normal;
+				color: #000000;
+				align-items: center;
+			}
+			.bannertu{
+				padding-top: 0px;
+				width: 100%;
+				height: 705px;
+				background: url(img/1banner1.jpg) no-repeat;
+				background-size:100% 600px;
+				
+			}
+			.bannertu>p{
+				color: #FFFFFF ;
+				font-family: KaiTi;
+				font-size: 65px;
+				float: right;
+				margin-right: 200px;
+				padding-top: 175px;
+				
+			}
+			.keneng{
+				width: 27%;
+				height: 60px;
+				float: right;
+				padding-top: 0px;
+				margin-left: 700px;
+				margin-right: 80px;
+			}
+			.keneng a{
+				color: white ;
+				font-family: KaiTi;
+				font-size: 28px;
+				margin-right: 200px;
+			}
+			.more{
+				width: 20%;
+				height: 30px;
+				float: right;
+				padding-left: 3px;
+				padding-right: 0px;
+				padding-top: 15px;
+				padding-bottom: 30px;
+				margin-top: 40px;
+				margin-left: 700px;
+				margin-right: 158px;
+				border-color: #F5F5F5;
+				border-width:1px;
+				border-style: solid;
+			}
+			.more a{
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 350;
+				color: #FFFFFF;
+				padding-bottom: 10px;
+			}
+			.baitu{
+				width: 100%;
+				height: 400px;
+			}
+			.zixun{
+				display: inline-block;
+				width: 50%;
+				height: 100%;
+			}
+			.one{
+				width: 40%;
+				height: 85px;
+				margin-left: 130px;
+				border: 1px solid #000000;
+			}
+			.one>p{
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #996633;
+				margin-left: 45px;
+				padding-top: 20px;
+			}
+			.zixun>p{
+				margin-left: 200px;
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.look{
+				margin-left: 95px;
+				padding-left: 0px;
+				width: 55%;
+				height: 102px;
+			}
+			.look a{
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.shequ{
+				float: right;
+				width: 50%;
+				height: 100%;
+			}
+			.two{
+				width: 40%;
+				height: 85px;
+				margin-left: 200px;
+				border: 1px solid #000000;
+			}
+			.two>p{
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #996633;
+				margin-left: 45px;
+				padding-top: 20px;
+			}
+			.shequ>p{
+				margin-left: 200px;
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			.make{
+				margin-left: 120px;
+				padding-left: 0px;
+				width: 55%;
+				height: 102px;
+			}
+			.make a{
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			 .wrap {
+            width:900px;
+            height:399px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 0px;
+            box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.3);
+             /* cursor: pointer;  鼠标指针变成 手 的形状 */
+             cursor: pointer;
+        }
+
+        .list {
+            width: 900px;
+            height:399px;
+            position: relative;
+            padding-left: 0px;
+            border: 7px solid rgb(239, 239, 239);
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all .8s;
+        }
+
+        .item:nth-child(1) {
+            background-image: url(img/zpp1.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(2) {
+            background-image: url(img/zpp2.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(3) {
+            background-image: url(img/zpp3.jpg);
+          background-size: cover;
+        }
+
+        .item:nth-child(4) {
+            background-image: url(img/zpp4.jpg);
+           background-size: cover;
+        }
+
+        .item:nth-child(5) {
+            background-image: url(img/zpp6.jpg);
+          background-size: cover;
+        }
+
+        .item.active {
+            z-index: 10;
+            opacity: 1;
+        }
+
+        .button {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            z-index: 100;
+            top: 192px;
+            position: absolute;
+        }
+
+        .button-left {
+            display: flex;
+            width: 26px;
+            justify-content: center;
+            line-height: 30px;
+            margin-left: 7px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .button-right {
+            display: flex;
+            width: 26px;
+            justify-content: center;
+            line-height: 30px;
+            margin-right: 7px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .pointList {
+            list-style: none;
+            padding-left: 0px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 200;
+        }
+
+        .point {
+            width: 10px;
+            height: 10px;
+            background-color: antiquewhite;
+            border-radius: 100%;
+            float: left;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: slategray;
+            cursor: pointer;
+        }
+
+        .point.active {
+            background-color: cadetblue;
+        }
+		</style>
+	</head>
+	<body>
+		<!--头部一个大盒子装两个盒子-->
+		<div class="header">
+					<img src="img/logo1.jpg"width="113px"height="97px">
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+			<form>
+				<input type="text"/>
+				<button>搜索</button>
+			</form>
+		</div>
+			</div>
+		</div>
+		
+		<div class="wrap">
+        <ul class="list">
+            <li class="item active">0</li>
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+        </ul>
+        <ul class="pointList">
+            <li class="point active" data-index=0></li>
+            <li class="point" data-index=1></li>
+            <li class="point" data-index=2></li>
+            <li class="point" data-index=3></li>
+            <li class="point" data-index=4></li>
+        </ul>
+        
+        <div class="button">
+            <span class="button-left"> < </span>
+            <span class="button-right"> > </span>
+        </div>
+
+    </div>
+		<script>
+    var items = document.querySelectorAll(".item");//图片
+    var points = document.querySelectorAll(".point")//小圆点
+    var left = document.querySelector(".button-left");
+    var right = document.querySelector(".button-right");
+    var all = document.querySelector(".wrap")
+    var index = 0;  // 图片索引 代表当前第几张图片
+    var time = 0;  //定时器跳转参数初始化
+
+
+    //封装一个清除active方法
+    var clearActive = function () {
+        for (i = 0; i < items.length; i++) {
+            items[i].className = 'item';
+        }
+        for (j = 0; j < points.length; j++) {
+            points[j].className = 'point';
+        }
+    }
+
+    //改变active方法
+    var goIndex = function () {
+        clearActive();
+        items[index].className = 'item active';
+        points[index].className = 'point active'
+    }
+    //左按钮事件
+    var goLeft = function () {
+        if (index == 0) {
+            index = 4;
+        } else {
+            index--;
+        }
+        goIndex();
+    }
+
+    //右按钮事件
+    var goRight = function () {
+        if (index < 4) {
+            index++;
+        } else {
+            index = 0;
+        }
+        goIndex();
+    }
+
+
+    //绑定点击事件监听
+    left.addEventListener('click', function () {
+        goLeft();
+        time = 0;//计时器跳转清零
+    })
+  
+    right.addEventListener('click', function () {
+        goRight();
+        time = 0;//计时器跳转清零
+    })
+
+    for (i = 0; i < points.length; i++) {
+        points[i].addEventListener('click', function () {
+            var pointIndex = this.getAttribute('data-index')
+            index = pointIndex;
+            goIndex();
+            time = 0;//计时器跳转清零
+        })
+    }
+    //计时器轮播效果
+    var timer;
+    function play() {
+        timer = setInterval(() => {
+            time++;
+            if (time == 20) {
+                goRight();
+                time = 0;
+            }
+        }, 100)
+    }
+    play();
+    //移入清除计时器
+    all.onmousemove　　 = function () {
+        clearInterval(timer)
+    }
+    //移出启动计时器
+    all.onmouseleave　　 = function () {
+        play();
+    }
+</script>
+		<!--装招聘图片  banner部分-->
+		<div class="zhaopinpic"></div>
+		<!--文字部分,两个盒子-->
+		<div class="text">
+			<div class="zhishang">
+			<a href="">志尚企业，值得信赖</a>
+		</div>
+		</div>
+		<!--第三张图片banner- 三个盒子，一个大盒子装两个小盒子->-->
+		<div class="bannertu">
+				<p>志尚团队</p>
+				<div class="keneng">
+				<a href="">志尚创造可能，激发创造潜能 让未来更美好  </a>
+			</div>
+			<div class="more">
+					<a href="">了解更多&gt&gt&gt</a>
+				</div>
+		</div>
+		<div class="baitu">
+			<div class="zixun"><!--再装一个盒子-->
+				<p>在线咨询</p>
+				<div class="look">
+					<a href="">看到机会并且学会抓住机会,在许多选择中把握住。</a>
+				</div>
+				<!--<div class="one">
+					<p>进入咨询</p>
+				</div>-->
+			</div>
+			<div class="shequ"><!--再装一个盒子-->
+				<p>志尚社区</p>
+				<div class="make">
+					<a href="">做你所感兴趣的，收获更多,也创造无限可能。</a>
+				</div>
+				<!--<div class="two">
+					<p>进入社区</p>
+				</div>-->
+			</div>
+		</div>
+	</body>
+</html>

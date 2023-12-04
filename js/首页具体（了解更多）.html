@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise {
+				width: 100%;
+				height: 125px;
+				background-color: #999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p {
+				padding-top: 26px;
+			}
+			
+			.huise>ul>li {
+				height: 0px;
+				padding: 0px 43px 125px;
+				float: left;
+				list-style: none;
+			}
+			
+			.huise>ul>li a {
+				width: 139px;
+				height: 31px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				line-height: 120px;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.huai {
+				width: 100%;
+				height: 12%;
+			}
+			
+			.huai a {
+				width: 100%;
+				height: 100%;
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				position: absolute;
+				left: 35%;
+				top: 19%;
+			}
+			
+			.tz {
+				width: 100%;
+				height: 60%;
+				background: #A6A6A6;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.tp {
+				width: 48%;
+				height: 100%;
+			}
+			
+			.ww {
+				width: 60%;
+				height: 100%;
+			}
+			
+			.ww a {
+				width: 861px;
+				height: 466px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				position: absolute;
+				top: 38%;
+			}
+			
+			.er {
+				width: 100%;
+				height: 60%;
+				background: #A6A6A6;
+				position: absolute;
+				top: 760px;
+			}
+			
+			.tp1 {
+				width: 45%;
+				height: 100%;
+			}
+			
+			.ww1 {
+				width: 60%;
+				height: 50%;
+			}
+			
+			.ww1 a {
+				width: 861px;
+				height: 26px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				position: absolute;
+				top: 20%;
+				left: 45%;
+			}
+			
+			.zui {
+				width: 100%;
+				height: 25%;
+				background: #A6A6A6;
+				position: absolute;
+				top: 1330px;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.zuo {
+				width: 861px;
+				height: 26px;
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				position: absolute;
+				top: 8%;
+			}
+			
+			.you {
+				width: 861px;
+				height: 26px;
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+				position: absolute;
+				top: 8%;
+				left: 55%;
+			}
+			
+			.you a {
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.you p {
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.zou a {
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.zuo p {
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="huai">
+			<a>欢迎来到志尚潜能站</a>
+		</div>
+		<div class="tz">
+			<div class="tp">
+				<img src="img/潜能.jpg"width="100%" height="100%" />
+			</div>
+			<div class="ww">
+				<a>我们是一群怀揣梦想、充满信念的志尚人，我们也是一群怀揣大志的大学生创业者，我们的理念是“志存高远，尚信塑品”。在这里，我们以信念为支撑，将梦想化作行动，将勇气转化为力量。在这里我们携手并进，共创美好未来。</a>
+			</div>
+		</div>
+		<div class="er">
+			<div class="tp1">
+				<img src="img/挑战.jpg" width="100%" height="100%" />
+			</div>
+			<div class="ww1">
+				<a> 在这里，每个人都是志尚的一份子，彼此激励，共同成长。让我们一起勇往直前，开拓未来，因为我们相信志尚人的力量，必将创造无限可能因为我们深信，只要心怀志向，脚踏实地，未来必将辉煌灿烂。</a>
+			</div>
+		</div>
+		<div class="zui">
+			<div class="zuo">
+				<a>
+					<p>联系我们： </p>
+					TEL:1-800-234-5678 </br>
+					XXX@qq.com </a>
+			</div>
+			<div class="you">
+				<a>
+					<p>地址：</p>
+					贵阳<br /> 贵阳
+				</a>
+
+			</div>
+		</div>
+	</body>
+
+</html>

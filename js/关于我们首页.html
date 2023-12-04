@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				width: 100%;
+				height: 200px;
+			}
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			.search{
+				width: 10%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			.search form{
+				width: 20%;
+				display: flex;
+			}
+			.search input{
+				line-height: 25px;
+				background-color: #999999;
+			}
+			.search button{
+				width: 70px;
+				background-color: #999999;
+				color: #000000;
+			}
+			
+			/*logo部分*/
+			.header>img{
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			.huise>ul{
+				margin-left: 340px;
+			}
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 130px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.zp{
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			.zp a{
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			/*banner二图片部分*/
+			.bannertu{
+				padding-top: 0px;
+				width: 100%;
+				height: 705px;
+				background: url(img/banner3.jpg) no-repeat;
+				background-size:100% 705px;
+			}
+			.bannertu>img{
+				margin-top: 0px;
+			}
+			.text{
+				padding: 30px;
+				width:99%;
+				height: 30px;
+			}
+			.text a{
+				
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 200;
+				color: #000000;
+				margin-left: 35%;
+			}
+			.tuwen{
+				margin-top: 20px;
+				width: 100%;
+				height: 480px;
+				
+			}
+			.tu1{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/驾校.jpg)no-repeat;
+				background-size:100% 100% ;
+				
+			}
+			.wen1{
+				float: right;
+				width: 50%;
+				height: 500px;
+				
+			}
+			.fuze{
+				margin-top: 35px;
+				margin-left: 40px;
+				width: 100%;
+				height: 60%;
+			}
+			.fuze a{
+				padding-top: 30px;
+				font-size: 35px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #333333;
+				
+			}
+			.more1{
+				width:30%;
+				height: 50px;
+				float: right;
+				border: 1px solid #000000;
+				background-color: cornflowerblue;
+				
+			}
+			.more1>a{
+				font-size: 30px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #333333;
+				margin-left: 20px;
+				padding-top: 10px;
+			}
+			.tu2{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/直播1.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.tu3{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/策划1图片.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.tu4{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/运营.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.tu5{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/劳务派遣.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.tu6{
+				display: inline-block;
+				width: 50%;
+				height: 480px;
+				background:url(img/数码.jpg) no-repeat;
+				background-size:100% 100% ;
+			}
+			.biaoti{
+				width: 70%;
+				height: 30px;
+			}
+			.biaoti p{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #333333;
+			}
+			.neir{
+				padding-top: 20px;
+				width: 94%;
+				height: 297px;
+			}
+			.neir a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+					<img src="img/logo1.jpg"width="113px"height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页具体.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+			<form>
+				<input type="text"/>
+				<button>搜索</button>
+			</form>
+		</div>
+			</div>
+		</div>
+		<!--第二部分，装第一张照片的盒子-->
+		<div class="bannertu"></div>
+		<!--第三部分，一个大盒子装两个小盒子-->
+		
+			<div class="text">
+				<a href="">志尚为你提供轻松岗位</a>
+			</div>
+			<!--图文盒子再装三个盒子-->
+			<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu1"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+							<p>志尚企业认真负责：</p>
+						</div>
+						<div class="neir">
+					<a href="">
+						报名不犹豫，学车不动摇，<br />
+						 练车不懈怠， 考试不退缩，<br />
+						  有一种信赖叫深入人心 ，<br />
+						   有一种服务就学员至上。</a></div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们驾校.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+		<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu2"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+						<p>志尚企业带你了解详情：</p></div>
+						<div class="neir">
+					<a href="">
+						直播让更多的商品走向千家万户，<br />
+						 方便你我的同时帮助需要的人， <br />
+						 大家共同守护运用这个绿色平台， <br />
+						 让科技为人类造福，惠民利民。</a></div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们直播.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+		<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu3"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+							<p>志尚团队用专业征服你：</p>
+						</div>
+						<div class="neir">
+					<a href="">
+						这里为你提供你想要的策划，<br />
+						只有你想不到，没有办不到，<br />
+						找对团队很重要，做事轻松，<br />
+						 能为你的策划解忧，轻松完成。</a></div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们策划书.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+				<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu4"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+							<p>志尚用科学方法教你运营：</p>
+						</div>
+						<div class="neir">
+					<a href="">
+						企业要想成功，那经营一定要正确，<br />
+						 科学的管理方法，科学的管理体制，<br />
+						  强大的精神内核，企业信仰的文化，<br />
+						   激励员工的方式方法，惩罚分明</a>
+						   </div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们运营.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+				<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu5"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+							<p>志尚有劳务派遣机会：</p>
+						</div>
+						<div class="neir">
+					<a href="">
+						用工方式灵活，<br />
+						 降低用工成本，<br />
+						  降低用工风险。<br />
+						   </div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们劳务.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+				<div class="tuwen">
+				<!--图片盒子-->
+				<div class="tu6"></div>
+				<!--文字盒子-->
+				<div class="wen1"><!--再建两个小盒子-->
+					<div class="fuze">
+						<div class="biaoti">
+							<p>志尚多姿多彩的数码产品：</p>
+						</div>
+						<div class="neir">
+					<a href="">丰富的产品，满足多种选择，<br />
+						 你需要的数码产品都会提供，<br />
+						  质量得到保证，产品真实可靠，<br />
+						   各种品牌与良好的信誉度。<br />
+						
+						   </div>
+						   </div>
+						   <div class="more1">
+					<a href="关于我们数码产品.html">了解更多&gt&gt&gt</a>
+				</div>
+				</div>
+				<!--了解更多-->
+				
+				</div>
+	</body>
+</html>

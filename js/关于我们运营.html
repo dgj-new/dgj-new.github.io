@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color:#000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.tuwen{
+				width: 100%;
+				height: 640px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 40px;
+			}
+			.gezhong {
+			     margin: 0px;
+				width: 55%;
+				height: 50px;
+				margin-left: 20%;
+			}
+			.gezhong a{
+				font-size: 50px;
+				font-family: KaiTi;
+				font-weight: 500;
+				color: #7A093B;
+				
+			}
+		.wen1{
+			margin-right: 70px;
+			padding-top: 30px;
+			width: 40%;
+			height: 300px;
+			float: right;
+		
+		}
+		.wen1 a{
+				font-size: 38px;
+				font-family: KaiTi;
+				font-weight: 200;
+				color: #7A093B;
+		}
+		
+		.tu{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:600px;
+			background: url(img/运营图片1.jpg);
+			background-size:100% 100% ;
+		}
+		.tu1{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:600px;
+			background: url(img/运营图片2.png);
+			background-size:100% 100% ;
+		}
+		.tu2{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:600px;
+			background: url(img/运营图片3.jpg);
+			background-size:100% 100% ;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个盒子装文字-->
+		
+		<!--一个大的图文盒子装三个盒子-->
+		<div class="text">
+			<div class="gezhong">
+				<a href="">志尚团队用专业教你运营</a></div>
+			</div>
+		
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu"></div>
+			<div class="wen1">
+				<a href="">策略运营:<br /> 
+				<br />
+					1.工作内容:通过分析现有的用户特征，构造用户画像，针对不同画像的族群，探寻
+					  他们的核心需求，为了满足各族群的核心
+				需求，制定相关策略以改善产品。<br />
+				<br />
+				2.很多人说适合数据分析、产品运营、用
+				户运营的人员转型，但是这个岗位的要求
+				并不是看上去那么低门槛，相反是一个</a>
+			</div>
+		</div>
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu1"></div>
+			<div class="wen1">
+				<a href="">高门槛的岗位。它需要很懂业务及人们的
+				产品需求、用户行为特征。因为它隶属于
+				企业正确战略聚焦一环，战略错误发展
+				方向错误，你后续的投放及资源管理配置都是错误。<br /><br />
+				产品运营：<br />
+				1.工作内容：产品数据监控分析，提高产品数据。<br />
+				2.核心能力：数据分析能力、用户洞察能力
+				、项目管理能力。<br />
+				3.适合人群：对数据敏感、</a>
+			</div>
+		</div>
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu2"></div>
+			<div class="wen1">
+				<a href="">逻辑思维强、善于团队协作<br /><br /><br />
+				内容运营：<br />
+				1.工作内容：通过生产和重组内容的方式，
+				满足用户的内容消费需求，提升用户活跃
+				度和忠诚度。<br />
+				2.核心能力：文案撰写能力、热点跟进能力<br />
+				3.适合人群：喜欢逛内容社区、喜欢追热点
+				、文字表达能力强。</a>
+			</div>
+		</div>
+	</body>
+</html>

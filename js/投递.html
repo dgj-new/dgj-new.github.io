@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <meta charset="UTF-8">
+    <title>求职简历</title>
+    <style>
+        body {
+            background-color: #c7f0e7;
+        }
+        .logo {
+            top: 10px;
+            left: 10px;
+        }
+       .links {
+				float: right;
+				margin-top: 10px;
+				margin-left: 10px;
+				color: #666666;
+			}
+			
+			.links a {
+				text-decoration: none;
+				font-size: 25px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #030D11;
+			}
+			.links a:hover{
+				color: brown;
+				font-size: 30px;
+			}
+        .box {
+            width: 25%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 5px;
+            background-color: #a8e6cf;
+            padding: 20px;
+        }
+       .box p{
+				font-size: 30px;
+font-family: KaiTi;
+font-weight: 200;
+color: #080B01;
+			}
+			.box a{
+				font-size: 20px;
+font-family: KaiTi;
+font-weight: 400;
+color: #030D11;
+			}
+        .footer {
+            bottom: 0;
+            width: 90%;
+            background-color: blanchedalmond;
+            text-align: left;
+            padding: 5px;
+			margin-left: 60px;
+			position: absolute;
+			top: 20o0px;
+        }
+        .footer a{
+				color: green;
+				font-family: kaiti;
+			}
+		.toudi{
+			background-color:steelblue;
+		}
+		.toudi a{
+			text-decoration: none;
+			color: floralwhite;
+		}
+		#jobs{
+			font-size: 15px;
+font-family: KaiTi;
+font-weight: 400;
+color: #030D11;
+		}
+		#salary{
+			font-size: 15px;
+font-family: KaiTi;
+font-weight: 400;
+color: #030D11;
+align-items: center;
+		}
+    </style>
+</head>
+<body>
+    <div class="logo">
+		<div class="links">
+		    <a href="首页.html" >首页</a> | <a href="职位信息首页.html">职位信息</a>
+		</div>
+        <img src="img/logo1.jpg" alt="Logo" width="90px">
+    </div>
+    <div class="box">
+        <a><p>填写你的求职意愿</p>
+         <label for="jobs">职位部门：</label>
+            <select id="jobs">
+            	<option value="请选择">请选择</option>
+                <option value="人事部">人事部</option>
+                <option value="商务中心部">商务中心部</option>
+                <option value="运营部">运营部</option>
+				<option value="技术部">技术部</option>
+				<option value="监察部">监察部</option>
+				<option value="安保部">安保部</option>
+            </select><br /><br />
+			<label for="jobs">职位名称：</label>
+			   <select id="jobs">
+			   	<option value="请选择">请选择</option>
+			       <option value="数据处理文员">数据处理文员</option>
+			       <option value="会计">人事部主管</option>
+			       <option value="人事员">人事员</option>
+				   <option value="员工安置员">员工安置员</option>
+				   <option value="会计">会计</option>
+				   <option value="打包工">打包工</option>
+				   <option value="装卸工">装卸工</option>
+				   <option value="质检工">质检工</option>
+				   <option value="技术维修员">技术维修员</option>
+				   <option value="组装员">组装员</option>
+				   <option value="监察员">监察员</option>
+				   <option value="保安">保安</option>
+			   </select><br /><br />
+			   <label for="salary">期望薪资待遇:</label><br>
+			       <input type="text" id="salary" name="salary" placeholder=" 最低薪资 - 最高薪资"><br /><br />
+				<a>身份:</a>
+				  <div>
+				    <input type="checkbox" id="option1" name="option1" value="option1">
+				    <label for="option1"><a>职场人士(已参加工作)</a></label>
+				  </div>
+				  <div>
+				    <input type="checkbox" id="option2" name="option2" value="option2">
+				    <label for="option2"><a>学生(在校生，应届生)</a></label><br />
+				  </div>
+            <div class="toudi"><a href=""><p style="font-size: 25px;">投递</p></a></div>
+        </form></a>
+    </div>
+    <div class="footer">
+        <a>应聘方式：<br>1丶 在线申请:点击"应聘"在线填写简历并提交;<br>2丶 附件上传:点击"上传简历",并提交个人简历;<br>3丶电子邮件:2783901745@qq.com<br>
+        <p>注: 邮件标题及简历附件名称统一为:姓名+应聘职位+应聘时间,例如"张三+渠数据处理员+20140608"</p></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.huise{
+				width: 100%;
+				height: 125px;
+				background-color:#999999;
+			}
+			/*搜索栏设置*/
+			
+			.search {
+				width: 5%;
+				height: 47%;
+				padding-top: 40px;
+				margin-left: 75%;
+				background-color: #999999;
+				display: inline-block none;
+			}
+			
+			.search form {
+				width: 20%;
+				display: flex;
+			}
+			
+			.search input {
+				line-height: 25px;
+				background-color: #999999;
+			}
+			
+			.search button {
+				width: 70px;
+				background-color: #999999;
+				color:#000000;
+			}
+			/*logo部分*/
+			
+			.header>img {
+				float: left;
+				margin-top: 13px;
+				margin-left: 53px;
+			}
+			/*导航条部分*/
+			
+			.huise>ul {
+				margin-left: 340px;
+			}
+			
+			.zp {
+				width: 5%;
+				height: 4px;
+				font-size: 20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				margin-left: 175px;
+				padding-top: 16px;
+			}
+			
+			.zp a {
+				font-size: 27px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #000000;
+			}
+			
+			.huise p{
+				padding-top: 26px;
+			}
+			.huise>ul>li{
+				height: 0px;
+				padding: 0px 43px 155px;
+				float: left;
+				list-style: none;
+				
+			}
+			.huise>ul>li a{
+				width: 139px;
+				height: 31px;
+				font-size:20px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color:#000000;
+				line-height:120px ;
+			}
+			.huise>ul>li a:hover{
+			color: lemonchiffon;
+			font-size: 25px;
+			}
+			.tuwen{
+				width: 100%;
+				height: 550px;
+			}
+			.text{
+				padding: 30px;
+				width:90%;
+				height: 40px;
+			}
+			.gezhong {
+			     margin: 0px;
+				width: 55%;
+				height: 50px;
+				margin-left: 20%;
+			}
+			.gezhong a{
+				font-size: 45px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #AC6A00;
+				
+			}
+		.wen1{
+			margin-right: 70px;
+			padding-top: 40px;
+			width: 40%;
+			height: 350px;
+			float: right;
+		
+		}
+		.wen1 a{
+				font-size: 40px;
+				font-family: KaiTi;
+				font-weight: 400;
+				color: #AC6A00;
+		}
+		
+		.tu{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:500px;
+			background: url(img/1.png);
+			background-size:100% 100% ;
+		}
+		.tu1{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:500px;
+			background: url(img/2.png);
+			background-size:100% 100% ;
+		}
+		.tu2{
+			margin-top:20px;
+			display: inline-block;
+			width: 50%;
+			height:500px;
+			background: url(img/3.png);
+			background-size:100% 100% ;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/logo1.jpg" width="113px" height="97px">
+			<!--一个灰色盒子-->
+			<div class="huise">
+				<div class="zp">
+					<a href="">招<br />聘</a>
+				</div>
+				<ul>
+					<li>
+						<a href="首页.html">首页</a>
+					</li>
+					<li>
+						<a href="职位信息首页.html">职位信息</a>
+					</li>
+					<li>
+						<a href="求职经验首页.html">求职经验</a>
+					</li>
+					<li>
+						<a href="关于我们首页.html">关于我们</a>
+					</li>
+				</ul>
+				<!--设置搜索栏-->
+				<div class="search">
+					<form>
+						<input type="text" />
+						<button> 搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--一个盒子装文字-->
+		
+		<!--一个大的图文盒子装三个盒子-->
+		<div class="text">
+			<div class="gezhong">
+				<a href="">志尚公司提供数码产品，真实可靠</a></div>
+			</div>
+		
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu"></div>
+			<div class="wen1">
+				<a href="">一些简单的介绍：<br />
+					产品的性能、价格和品牌是年轻人选购数
+					 码产品时最关注的三要素
+					  十大件产品以[两年]为购买周期，小件
+					   配件等购买周期小幅缩短
+					 [随时按需购买]成为年轻人主流选择，各
+				类大促日/品类日“退让”
+				本土年轻人购买数码3C产品的年度消费额以
+				[3000-10000元]居多。</a>
+			</div>
+		</div>
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu1"></div>
+			<div class="wen1">
+				<a href="">传统电商平台和品牌官方仍是年轻人购
+					买数码3C产品的日常渠道
+				年轻人希望看到产品真实的产品力和使
+				用反馈，B站是年轻人购买数码3C产品时最
+				常参考的内容是平台+手机、台式电脑及设备
+				、耳机耳麦是用户互动量TOP3热门内容品类。</a>
+			</div>
+		</div>
+		<div class="tuwen">
+		
+			<!--图片盒子-->
+			<div class="tu2"></div>
+			<div class="wen1">
+				<a href="">线上内容打动年轻人的原因简单、直接
+				品牌围绕产品特性[场景化种草]瞄准目标
+				用户营造使用代入感。
+				结合产品特性，以显著人群为标签内容精
+				准营销直击需求痛点。
+				专业创作plus知识向教学、向内容，职
+				业人延展数码3C内容矩阵纵深。
+				品牌内容营销竞争升级，从产品能力展
+				示转向花式创意自选动作......</a>
+			</div>
+		</div>
+		
+	</body>
+</html>
